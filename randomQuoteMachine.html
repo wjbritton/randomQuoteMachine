@@ -1,30 +1,47 @@
 <!doctype html>
 <html lang="en">
 <head>
-  
-      <link rel="stylesheet" href="randomQuoteMachine.css">
-      <script type="text/javascript" src="randomQuoteMachine.js"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" type="text/html" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- custom CSS -->
+      <link rel="stylesheet" type="text/css" href="randomQuoteMachine.css">
+      
+       <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <!-- jQuery -->
+      <script src="jquery-3.2.1.min.js"></script>
+     
+      
     <meta charset="UTF-8">
 </head>
   <body id="bgImg">
-    <div vertical-align="center" class="main">
-      <p class="quoteText">
-        "<a id="quote">Whether you’re 9 or 90, stop trying to fix the things you’re bad at, and focus on the things you’re good at.</a>"
-        <br /><br />
-      </p>
-      <p class="authorText">
-        <a id="author">Gary Vaynerchuk</a>
-        <br />
-        <br />
-      </p>
+    
+    <!-- Main Div --> 
+    <div class="col-md-12">
+    
+    <!-- Quote Div -->
+    <div class="col-md-1"></div>
+      <div class="col-md-4" style="width:30%">
+      <ul>
+        <li><span style="font-size:36px">"</span><a id="quote">Whether you’re 9 or 90, stop trying to fix the things you’re bad at, and focus on the things you’re good at.</a><span style="font-size:36px">"</span></li>
+        <li><a id="author">Gary Vaynerchuk</a></li>
+        </ul>
+        </div>
+    
+    <div class="col-md-2"></div>
+    <div class="col-md-4 bottom">
+      <ul>
+        <li><button onclick="random()" class="newQuote">New Quote <i class="fa fa-book"></i></button></li>
+        <li><button onclick="tweet()" class="tweet">Tweet Quote <i class="fa fa-twitter"></i></button></li>
+      </ul>
     </div>
-    <div class="button">
-      <button onclick="random()">
-       New Quote
-      </button>
-        <i class="fa fa-twitter bird"> <span style="font-size:32px; font-family:impact;">Tweet Quote<span>
-          </i></a>
+    <div class="col-md-6"></div>
+    
     </div>
   </body>
+  <!-- custom JavaScript-->
+      <script type="text/javascript" src="randomQuoteMachine.js"></script>
     
 </html>

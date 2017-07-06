@@ -1,54 +1,61 @@
 
-div {
-          padding:0;
-          margin:5% 0 0 0;
-          border:0;
-          text-align:center;
-          vertical-align:text-center;
-          background-color:rgba(0,0,0,0);
-          color:black;
-          font-size:32px;
-          font-family:impact;
-          width:28%;
-          
-}
 body {
-  backgrond-color:black;
+  background-color:white;
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
   
 }
 
-button {
-  color:yellow;
-  border-radius:50%;
-  font-size:36px;
-  padding:5%;
-  border:2px solid black;
-  font-family: impact;
-  background-color:black;
+ul {
+  display: inline;
+  list-style: none;
 }
-.button {
+
+li {
+  padding:1em;
+}
+
+.bottom {
   position: fixed;
-  bottom: 5%;
-  margin-right: auto;
-  margin-left: auto;
+  bottom: 0;
+  width: 100%;
+  text-align:left;
 }
-p.quoteText {
-  color:black;
-  text-shadow: 1px 2px white;
-  padding:1%;
-}
-p.authorText {
-  color:black;
-  text-shadow: 2px 0 yellow, 0 1px yellow, -1px 0 white, 0 -1px white;
-}
-.bird {
-  font-size:40px;
+
+.newQuote {
   background-color:yellow;
-  padding:4px;
-  margin:10px;
+  border-radius:50%;
+  padding: 1em;
+  font-size:1.5em;
+  font-weight:700;
+  border-color:black;
+}
+
+.tweet {
+  background-color:#00aced;
+  border-radius:50%;
+  padding: 1em;
+  font-size:1.5em;
+  font-weight:700;
+  border-color:black;
+}
+
+#quote {
+   margin-top:5px;
+  margin-bottom:5px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size:1.5em;
+  padding:0.2em 0;
+}
+
+#author {
+    margin-top:5px;
+    margin-bottom:5px;
+    font-family: impact, cursive, sans-serif;
+    color:#2F4F4F;
+    font-size:1.5em;
+    padding:0.2em 0;
 }
 
 #bgImg {
