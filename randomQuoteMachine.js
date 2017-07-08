@@ -48,10 +48,15 @@ var masterArr = [
 ]
 ];
 
+//First Random Quote
+random();
 
-
+//Random Array Index
 var random8;
+
+//Storage of the Random Array Index
 var storeRandom;
+
 //Random function to be run upon button click
 
 function random() {
@@ -78,12 +83,13 @@ var imgFinal = img1.concat(img2 + img3);
 document.getElementById("bgImg").style.backgroundImage = imgFinal;
   }
   
+  
+//Tweet Quote
   function tweet() {
-   random8= Math.floor((Math.random() * 7) );
-   var tweetStart = "http://twitter.com/intent/tweet?text=";
-   var author = masterArr[storeRandom][0].split(' ').join('+');
-   var tweetVar = masterArr[storeRandom][1].split(' ').join('+');
-   var tweet = tweetStart.concat(author + "  -" + tweetVar );
-   window.location.href = tweet;
-   //Test Tweet concat//alert(tweet);
+       random8= Math.floor((Math.random() * 7) );
+       var tweetStart = "http://twitter.com/intent/tweet?text=";
+       var author = masterArr[storeRandom][0].split(' ').join('+');
+       var tweetVar = masterArr[storeRandom][1].split(' ').join('+');
+       var tweet = tweetStart.concat(author + "  -" + tweetVar );
+       window.location.href = tweet;
   }
